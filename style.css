@@ -50,9 +50,22 @@ a {
 li {
   list-style: none;
 }
-button {
+header nav .right-side-menu .right-sub-menu a input[type="button"] {
   padding: 1rem 3rem;
   border-radius: 20px;
+  border: none;
+  text-transform: capitalize;
+  line-height: 20px;
+  cursor: pointer;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+  z-index: 1;
+  width: 150px;
+}
+button {
+  padding: 1rem 3rem;
+  border-radius: 25px;
   border: none;
   text-transform: capitalize;
   line-height: 20px;
@@ -115,20 +128,29 @@ header nav .right-side-menu .right-sub-menu {
   justify-content: flex-end;
 }
 header nav .right-side-menu .right-sub-menu a {
-  margin-right: 80px;
-  padding: 7px 20px;
+  margin-right: 90px;
+  padding: 9px 20px;
   font-size: 20px;
   background-color: rgb(250, 250, 250);
   border-radius: 15px;
   z-index: 2;
 }
-header nav .right-side-menu .right-sub-menu button {
+header nav .right-side-menu .right-sub-menu .signup {
+  margin-right: 20px;
+  padding: 0px 0px;
+  font-size: 20px;
+  background-color: rgb(250, 250, 250);
+  border-radius: 15px;
+  z-index: 2;
+}
+
+header nav .right-side-menu .right-sub-menu input[type="button"] {
   color: white;
   background-color: var(--button-background);
   padding: 11px;
   width: 20%;
 }
-header nav .right-side-menu .right-sub-menu button:hover {
+header nav .right-side-menu .right-sub-menu input[type="button"]:hover {
   background-color: #315e96;
   transform: scaleX(1.1);
   transition: 0.2s;
@@ -381,6 +403,9 @@ header nav .left-side-menu .left-sub-menu a li:hover {
   width: 35%;
   padding-bottom: 1rem;
 }
+#copy-right {
+  margin-right: 0.5rem;
+}
 footer {
   width: 100%;
   height: auto;
@@ -405,8 +430,8 @@ footer a {
   line-height: 1.9rem;
 }
 footer p {
-  font-size: 1.6rem;
-  padding-top: 1rem;
+  font-size: 1.4rem;
+  padding-top: 0.2rem;
 }
 .icon-bar {
   position: fixed;
@@ -470,6 +495,9 @@ footer p {
     #cc2366 75%,
     #bc1888 100%
   );
+}
+.icon-bar .github {
+  background-color: #333;
 }
 .icon-bar .youtube {
   background: #ff0000;
